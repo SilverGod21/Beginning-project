@@ -1,0 +1,10 @@
+div {
+    background-image:url(https://thumbs.dreamstime.com/b/horizontal-japanese-spring-sakura-cherry-blossoms-size-website-half-banner-background-d-illustration-clip-art-floral-petal-173785773.jpg);
+}
+
+p {
+    padding: 10px;
+    margin: 20px;
+    font-style: italic;
+    color: rgb(0, 0, 255);
+}

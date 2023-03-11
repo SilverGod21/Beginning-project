@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index2.1.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <h1>Primul meu calculator suma si scaderea </h1>
+    <form name="form_calculator">
+        <label>Introduceti primul numar</label>
+        <input type="text" name="variabila1">
+        <br><br>
+
+        <label>Introduceti al doilea numar</label>
+        <input type="text" name="variabila2">
+        <br><br>
+
+        <input type="button" onclick="compute('adunare')" value="Add" name="adunare" id="buton_adunare">
+        <input type="button" onclick="compute('scadere')" value="Subtract" name="scadere" id="buton_scadere">
+        <input type="button" onclick="compute('inmultire')" value="Multiply" name="inmultire" id="buton_inmultire">
+        <input type="button" onclick="compute('impartire')" value="Divide" name="impartire" id="buton_impartire">
+        <br><br>
+
+        <input type="text" name="result" readonly>
+    </form>
+</body>
+</html>

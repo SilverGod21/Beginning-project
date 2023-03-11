@@ -1,0 +1,716 @@
+/*"-webkit-text-size-adjust" It specifies that if you(author) want's to resize the text when the browser page is zoomed. 
+Most of the times it is better to set it to auto or 100% as the web browser will take care of how resizing of text is to be done.
+"line-height" este distanta dintre paragrafe.
+"*" este universal, adica selecteaza toate elementele.
+"before" si "after" se utilizeaza pentru a adauga ceva inainte si dupa text. Sunt PSEUDO ELEMENTE */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body.darktheme {
+    box-sizing: inherit;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    position: relative;
+    min-height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Div cu toata bara de sus*/
+div.headerAll {
+    padding-left: 12px;
+    padding-right: 16px;
+    overflow: visible;
+}
+
+.w3Bar {
+    position: relative;
+    z-index: 4;
+    font-size: 18px;
+    width: 100%;
+}
+
+.w3Bar::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.w3Bar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*De ce gasim in consola 2 valori de rgba? (styles la dreapta)*/
+.w3Card2 {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 16%);
+}
+/*Anchor pentru logo*/
+.modifyLogo {
+    width: 44.75px;
+    height: 42px;
+}
+
+a.styleContentLeft1 {
+    width: 77px;
+    height: 75px;
+}
+/*Elementele din stanga*/
+
+/*Daca puneam "display: block;" ca in inspect, imi apareau item-urile una sub alta*/
+.w3BarItem {
+    padding-right: 16px;
+    padding-left: 16px;
+    border: none;
+    display: inline-block;
+    outline: 0;
+}
+
+/*"vertical-align: middle;" the element is placed in the middle of the parent element
+De ce avem "color: inherit" cand parintele (div) nu are culoare?*/
+.w3Button {
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*"!important" SUPRASCRIE TOATE regulile de stil anterioare pentru acea proprietate specifica a elementului */
+.w3Left {
+    float: left!important;
+}
+
+.w3Padding16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+
+a.styleContentLeft2 {
+    width: 116px;
+}
+
+/*unde sunt stilate clasele "w3-hide-mall" si "barex"?*/
+.w3Padding24 {
+    padding-top: 24px!important;
+    padding-bottom: 24px!important;
+}
+
+.barItemHover:hover {
+    background-color: #04AA6D;
+    color: white;
+
+}
+
+a.styleContentLeft3 {
+    width: 132px;
+}
+
+a.styleContentLeft4 {
+    width: 118px;
+}
+
+/*Log in din dreapta*/
+
+a.styleButton {
+    display: inline;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#loginactioncontainer {
+    margin-left: 50px;
+    width: 80px;
+    height: 50px;
+}
+
+#w3loginbtn {
+    width: 130px;
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.w3Btn {
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.w3Right {
+    float: right!important;
+}
+
+/*Create, Get si Pro din dreapta*/
+.wsYellow {
+    background-color: #FFF4A3!important;
+    color: #000000!important; 
+}
+
+.styleYellow {
+    width: 160px;
+    border-radius: 25px;
+    margin-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.stylePink {
+    border-radius: 25px;
+    margin-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.wsPink {
+    background-color: #FFC0C7!important;
+    color: #000000!important;
+}
+
+.styleGrey {
+    border-radius: 25px;
+    margin-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.topNavMainPro {
+    background-color: #282A35;
+    color: #fff;
+}
+
+/*Lupa, globul si afisarea din dreapta*/
+
+div.extIconContainer {
+    background-color: #fff;
+    color: #000;
+}
+
+.styleIcons {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.styleIcon {
+    padding-top: 24px;
+    padding-right: 12px;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    margin-right: 8px;
+}
+
+.fa-solid {
+    font-size: 20px;
+    display: inline-block;
+}
+
+/* MAIN */
+
+
+/*De ce s-a pus transition?*/
+#main {
+    padding: 0;
+    border-right: none;
+    transition: margin-left .4s;
+}
+
+/*Partea neagra cu Learn to Code*/
+
+.styleBlack {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.wsBlack {
+    background-color: #282A35!important;
+    color: white!important;
+}
+
+.w3Center {
+    text-align: center!important;
+}
+
+.styleContentCenter {
+    max-width: 1400px;
+}
+
+/*"auto"- the browser calculates the margin*/
+.w3Content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learnToCodeContent {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.learnToCodeH1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+h1 {
+    margin-top: 2px!important;
+    margin-bottom: -20px!important;
+}
+
+.learnToCodeH3 {
+    color: #FFC0C7;
+    font-weight: 700;
+    margin-top: 30px!important;
+    margin-bottom: 10px!important;
+    font-size: 23px;
+}
+
+.styleExample {
+    margin: auto;
+    max-width: 500px;
+}
+
+form.example {
+    position: relative;
+}
+
+form.example input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #282A35;
+    border-radius: 25px;
+    float: left;
+    width: 80%;
+    padding-left: 25px;
+    background: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 1px solid #04AA6D;
+    outline: 0;
+}
+
+input {
+    overflow: visible;
+    font: inherit;
+    margin: 0;
+}
+
+form.example button {
+    border-radius: 25px;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #04AA6D;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #282A35;
+    border-left: none;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#addPadding {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.styleH4 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 30px!important;
+    margin-bottom: 10px;
+    
+}
+
+a.styleLink {
+    color: white;
+}
+
+/*Partea verde deschis cu HTML, stanga*/
+
+.styleGreen {
+    margin-top: -10px;
+}
+
+.wsLightGreen {
+    background-color: #D9EEE1!important;
+}
+
+/*
+.w3Row ::before {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.w3Row ::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.unic::before {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.unic::after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.w3Content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w3Padding32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important;
+}
+
+.styleContent {
+    max-width: 1400px;
+}
+
+.w3Content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styleCol {
+    padding: 3%;
+}
+
+.w3Col {
+    float: left;
+}
+
+.styleH1 {
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: -18px!important;
+}
+
+.styleP {
+  font-size: 19px;  
+}
+
+p {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.tutButton {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+}
+
+#a1Style {
+    margin-bottom: 2px;
+}
+
+.aPadding {
+    padding: 8px 16px;
+}
+
+#a2Style {
+    position: relative;
+    overflow: visible;
+    margin-bottom: 1px;
+}
+
+.refButton {
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.blackColor {
+    background-color: #282A35;
+    color: white;
+}
+
+/*Partea cu HTML Example*/
+
+.styleCol2 {
+    padding: 3%;
+}
+
+.styleGray {
+    padding: 16px;
+}
+
+.greyColor {
+    background-color: #E7E9Eb;
+    color: black;
+}
+
+.w3Round {
+    border-radius: 5px;
+}
+
+h3 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.styleSheet {
+    height: 300px;
+}
+
+/*Codul HTML*/
+
+/*"word-wrap" permite cuvintelor lungi sa se desparta si sa se puna pe urmatoarea linie*/
+.w3Code {
+    font-size: 15px;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    width: auto;
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    word-wrap: break-word;
+}
+
+.greenBorder {
+    border-left: 4px solid #04AA6D;
+}
+
+.tagNameColor {
+    color: brown;
+}
+
+.tagColor {
+    color: mediumblue;
+}
+
+.attributeColor {
+    color: red;
+}
+
+.tryItButton {
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 200px;
+}
+
+.wsWhite {
+    background-color: white;
+    color: black;
+}
+
+.cssSelectorColor {
+    color: brown;
+}
+
+.cssDelimiterColor {
+    color: black;
+}
+
+.cssPropertyColor {
+    color: red;
+    margin-left: 3%;
+}
+
+.cssValue {
+    color: mediumblue;
+}
+
+.attributeValueColor {
+    color: mediumblue;
+}
+
+.jsColor {
+    color: black;
+}
+
+.jsKeywordColor {
+    color: mediumblue;
+}
+
+.jsNumberColor {
+    color: brown;
+}
+
+.space {
+    margin-left: 3%;
+}
+
+.wsLightPink {
+    background-color: #F3ECEA;
+}
+
+.wsTurquoise {
+    background-color: #96D4D4!important;
+    color: black!important;
+}
+
+.sqlColor {
+    color: black;
+}
+
+.sqlKeywordColor {
+    color: mediumblue;
+}
+
+/*Partea neagra cu PHP, jQuery, Java, C++ etc*/
+
+.wsPadding64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+}
+
+.styleMax {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.stylePHP {
+    color: black;
+    background-color: #FFC0C7;
+    padding: 24px;
+}
+
+.styleAllText {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.w3TextDarkGrey {
+    color: #3a3a3a!important;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.w3MarginBottom {
+    margin-bottom: 16px!important;
+}
+
+.floatLeft {
+    float: left;
+    width: 50%;
+}
+
+.floatRight  {
+    float: right;
+    width: 50%;
+}
+
+.paddingAll {
+    padding: 2% 3%;
+}
+
+.stylejQuery {
+    background-color: #FFF4A3;
+    color: black;
+    padding: 24px;
+}
+
+.styleJava {
+    color: black;
+    background-color: #F3ECEA;
+    padding: 24px;
+}
+
+.styleJava {
+    color: black;
+    background-color: #D9EEE1;
+    padding: 24px;
+}
+
+.styleW3CSS {
+    color: black;
+    background-color: #96D4D4;
+    padding: 24px;
+}
+
+.styleBootstrap {
+    color: black;
+    background-color: #E7E9Eb;
+    padding: 24px;
+}
+
+/*Partea cu C, C#, R, Kotlin, etc*/
+
+.paddingHeight {
+    padding: 2% 3%;
+    height: auto;
+}
+
+.square {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.withoutDecoration {
+    text-decoration: none;
+    color: black;
+}
+
+.widthFit {
+    width: 25%;
+}
+
+.bigSquare {
+    padding: 36px 24px;
+}
+
+.smallSquare {
+    padding: 24px;
+}
+
+/* FOTTER*/
+
+.w3Container {
+    padding: 0.01em 16px;
+}
+
+.w3Container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.w3Container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.styleTopLeft {
+    font-size: 17px;
+    margin-top: -9px;
+
+}
