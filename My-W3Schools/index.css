@@ -1,8 +1,4 @@
-/*"-webkit-text-size-adjust" It specifies that if you(author) want's to resize the text when the browser page is zoomed. 
-Most of the times it is better to set it to auto or 100% as the web browser will take care of how resizing of text is to be done.
-"line-height" este distanta dintre paragrafe.
-"*" este universal, adica selecteaza toate elementele.
-"before" si "after" se utilizeaza pentru a adauga ceva inainte si dupa text. Sunt PSEUDO ELEMENTE */
+
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -52,7 +48,7 @@ div.headerAll {
     clear: both;
 }
 
-/*De ce gasim in consola 2 valori de rgba? (styles la dreapta)*/
+
 .w3Card2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 16%);
 }
@@ -68,7 +64,7 @@ a.styleContentLeft1 {
 }
 /*Elementele din stanga*/
 
-/*Daca puneam "display: block;" ca in inspect, imi apareau item-urile una sub alta*/
+
 .w3BarItem {
     padding-right: 16px;
     padding-left: 16px;
@@ -77,8 +73,6 @@ a.styleContentLeft1 {
     outline: 0;
 }
 
-/*"vertical-align: middle;" the element is placed in the middle of the parent element
-De ce avem "color: inherit" cand parintele (div) nu are culoare?*/
 .w3Button {
     vertical-align: middle;
     overflow: hidden;
@@ -89,7 +83,6 @@ De ce avem "color: inherit" cand parintele (div) nu are culoare?*/
     cursor: pointer;
 }
 
-/*"!important" SUPRASCRIE TOATE regulile de stil anterioare pentru acea proprietate specifica a elementului */
 .w3Left {
     float: left!important;
 }
@@ -103,7 +96,7 @@ a.styleContentLeft2 {
     width: 116px;
 }
 
-/*unde sunt stilate clasele "w3-hide-mall" si "barex"?*/
+
 .w3Padding24 {
     padding-top: 24px!important;
     padding-bottom: 24px!important;
@@ -225,7 +218,6 @@ div.extIconContainer {
 /* MAIN */
 
 
-/*De ce s-a pus transition?*/
 #main {
     padding: 0;
     border-right: none;
@@ -252,7 +244,6 @@ div.extIconContainer {
     max-width: 1400px;
 }
 
-/*"auto"- the browser calculates the margin*/
 .w3Content {
     margin-left: auto;
     margin-right: auto;
@@ -353,18 +344,6 @@ a.styleLink {
     background-color: #D9EEE1!important;
 }
 
-/*
-.w3Row ::before {
-    content: "";
-    display: table;
-    clear: both; 
-}
-
-.w3Row ::after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 
 .unic::before {
     content: "";
@@ -488,7 +467,6 @@ h3 {
 
 /*Codul HTML*/
 
-/*"word-wrap" permite cuvintelor lungi sa se desparta si sa se puna pe urmatoarea linie*/
 .w3Code {
     font-size: 15px;
     margin-top: 16px!important;
@@ -689,28 +667,4 @@ h5 {
 
 .smallSquare {
     padding: 24px;
-}
-
-/* FOTTER*/
-
-.w3Container {
-    padding: 0.01em 16px;
-}
-
-.w3Container::before {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.w3Container::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.styleTopLeft {
-    font-size: 17px;
-    margin-top: -9px;
-
 }

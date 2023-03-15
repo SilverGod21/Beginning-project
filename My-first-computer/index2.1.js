@@ -1,4 +1,3 @@
-//
 
 function sumaADouaNumere () {
     //nu am pus parametrii (mai exact number1 si number2) intre paranteze deoarece le luam direct din DOM
